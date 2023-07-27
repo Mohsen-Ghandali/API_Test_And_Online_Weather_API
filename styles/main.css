@@ -1,0 +1,421 @@
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #abdcfd;
+  color: whitesmoke;
+  padding: 64px 0;
+}
+
+main {
+  width: 90%;
+  margin: 0px auto 24px auto;
+  height: fit-content;
+  background-color: #2b2b2b;
+  box-shadow: 0px 0px 10px #2b2b2b;
+  padding: 1.5% 3%;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.container {
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  width: 194px;
+  margin-right: 8px;
+  margin-bottom: 14px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #000;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all linear 300ms;
+}
+
+.btn button:hover {
+  background-color: #abdcfd;
+  box-shadow: 0 0 5px #fff;
+}
+
+#error-message {
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  color: yellow;
+}
+
+h3 {
+  margin-top: 16px;
+  color: #abdcfd;
+  font-weight: bold;
+}
+
+h3 a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: #ddf1ff;
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: none;
+  transition: all 300ms linear;
+}
+
+h3 a:hover {
+  color: #3498db;
+  font-weight: 1000;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 16px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul ul {
+  padding-left: 32px;
+}
+
+ul a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#content {
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+#content h2 {
+  margin-top: 16px;
+}
+
+#slider {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1%;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+#slider > div {
+  width: 24%;
+  margin: 16px 0 8px 0.25px;
+}
+
+#slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#products {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1%;
+  color: whitesmoke !important;
+  margin: 16px 0;
+}
+
+#products h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#products > div {
+  width: 24%;
+  height: 100%;
+  margin-left: 0.2%;
+}
+
+#products img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#products p.text {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  color: #abdcfd;
+}
+
+#footer {
+  margin: 48px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#footer div img {
+  width: 64px;
+  margin-right: 2%;
+}
+
+.containerWeather {
+  width: 40%;
+  margin: 0 auto 48px auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 6px #fff;
+  background-color: #40b3ff;
+  padding: 20px;
+}
+
+.containerWeather label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bolder;
+  color: #2b2b2b;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.containerWeather select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14.8px;
+  border-radius: 10px;
+  color: #2b2b2b;
+  background: #dff2ff;
+}
+
+.containerWeather select option {
+  font-size: 15px;
+}
+.containerWeather button {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 75%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #09507f;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 550;
+}
+
+.containerWeather button:hover {
+  background-color: #0975bd;
+  box-shadow: 0 0 6px #0975bd;
+  color: #000;
+}
+#errorDisplay {
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}
+.containerWeather #weatherIcon img {
+  display: block;
+  margin: 16px auto 0 auto;
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+}
+
+.containerWeather #cityName,
+#temperature,
+#weatherDescription {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: capitalize;
+  color: #174564;
+}
+
+main > footer {
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 1.5%;
+  font-weight: bold;
+}
+
+main > footer a {
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  transition: all 500ms linear;
+  font-size: 14px;
+}
+
+main > footer a:hover {
+  color: #abdcfd;
+}
+main > footer > div {
+  margin-bottom: 16px;
+  margin-top: 22px;
+}
+main > footer > div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #40b3ff;
+}
+
+main > footer > div a img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 48px 0;
+  }
+  h1 {
+    margin-bottom: 10px;
+  }
+  .btn button {
+    width: 160px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    padding: 6px 0px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 40px 0;
+  }
+  #slider > div {
+    width: 49%;
+    margin-left: 0.4%;
+    margin-top: 8px;
+  }
+  #slider > div > img {
+    margin: 0;
+    padding: 0;
+  }
+
+  #products > div {
+    width: 49%;
+    margin-left: 0.3%;
+    margin-bottom: 16px;
+  }
+
+  main > footer {
+    margin-top: 3.5%;
+    margin-bottom: 2.5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 24px 0 0 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 16px 0 0 0;
+  }
+
+  .btn {
+    margin-bottom: 0;
+  }
+
+  .btn button {
+    width: 150px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  h3 a {
+    font-size: 15px;
+  }
+
+  ul a {
+    font-size: 16px;
+  }
+
+  #content {
+    margin-top: 0px;
+  }
+
+  #content h2 {
+    font-size: 16px;
+    padding: 08px 0 0 0;
+    margin-top: 0px;
+  }
+
+  #content p {
+    font-size: 16px;
+  }
+
+  #slider > div {
+    width: 99%;
+    margin-left: 0.5%;
+  }
+  #slider img {
+    padding-bottom: 10px;
+  }
+
+  #products p.text {
+    font-size: 15px;
+  }
+
+  #products h4 {
+    font-size: 15px;
+  }
+
+  #footer {
+    margin: 43px 0;
+  }
+
+  #footer div img {
+    width: 48px;
+    margin-left: 2%;
+  }
+  .containerWeather {
+    width: 75%;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+}

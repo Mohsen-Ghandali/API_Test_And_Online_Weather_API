@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Test</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    </head>
+  <body>
+    <main>
+      <h1>API Test</h1>
+
+      <div class="btn">
+        <button onclick="showMenu()">Check Menu API</button>
+        <button onclick="showContent()">Check Content API</button>
+        <button onclick="showSlider()">Check Slider API</button>
+        <button onclick="showProducts()">Check Products API</button>
+        <button onclick="showFooter()">Check Footer API</button>
+      </div>
+
+      <div id="error-message"></div>
+      <div class="container">
+        <h3>
+          1- Menu
+          <a target="_blank" href="http://217.160.64.18/menu.json">
+            / To the API link
+          </a>
+        </h3>
+        <hr />
+        <ul id="menu-list"></ul>
+        <br />
+        <h3>
+          2- Content
+          <a target="_blank" href="http://217.160.64.18/content.json">
+            / To the API link
+          </a>
+        </h3>
+        <hr />
+        <div id="content"></div>
+        <br />
+        <h3>
+          3- Slider
+          <a target="_blank" href="http://217.160.64.18/slider.json">
+            / To the API link
+          </a>
+        </h3>
+        <hr />
+        <div id="slider"></div>
+        <br />
+        <h3>
+          4- Products
+          <a target="_blank" href="http://217.160.64.18/products.json">
+            / To the API link
+          </a>
+        </h3>
+        <hr />
+        <div id="products"></div>
+        <br />
+        <h3>
+          5- Footer
+          <a target="_blank" href="http://217.160.64.18/footer.json">
+            / To the API link
+          </a>
+        </h3>
+        <hr />
+        <div id="footer"></div>
+      </div>
+    </main>
+
+    <main>
+      <h1>Online Weather API</h1>
+      <div class="containerWeather">
+        <label for="citySelect">Select a city</label>
+        <select id="citySelect">
+          <option value="">Choose a city</option>
+          <option value="Tehran">Tehran</option>
+          <option value="Berlin">Berlin</option>
+        </select>
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="errorDisplay"></div>
+        <div id="weatherIcon"></div>
+        <div id="cityName"></div>
+        <div id="temperature"></div>
+        <div id="weatherDescription"></div>
+      </div>
+      <hr />
+
+      <footer>
+        <div>
+          <a href="">
+            <img src="/icons/github.png" alt="GitHub" />Source code on my
+            GitHub</a
+          >
+        </div>
+
+        <small
+          >&copy; Copyright 2023
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/mohsen-ghandali-47a1aa224"
+          >
+            Mohsen Ghandali</a
+          ></small
+        >
+      </footer>
+    </main>
+
+    <script src="./scripts/testApi.js"></script>
+    <script src="./scripts/weather.js"></script>
+
+  </body>
+</html>
