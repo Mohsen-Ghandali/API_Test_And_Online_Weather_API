@@ -135,6 +135,11 @@ ul a {
   border-radius: 10px;
 }
 
+#slider div  {
+  margin-bottom: 48px;
+  color: chartreuse ;
+}
+
 #products {
   width: 100%;
   height: 100%;
@@ -326,7 +331,11 @@ main > footer > div a img {
     margin: 0;
     padding: 0;
   }
-
+  
+  #slider div  {
+     margin-bottom: 72px;
+  }
+  
   #products > div {
     width: 49%;
     margin-left: 0.3%;
