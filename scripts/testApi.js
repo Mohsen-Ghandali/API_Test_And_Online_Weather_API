@@ -91,7 +91,7 @@ async function showSlider() {
         } else {
             sliderData.forEach((item) => {
                 const sliderItem = document.createElement("div");
-                sliderItem.innerHTML = `<img src="${item.url}" alt="${item.alt}">`;
+                sliderItem.innerHTML = `<img src="${item.url}" alt="${item.alt}">` + `<h4>${item.title}</h4>` + `<p>${item.description}</p>`;
                 sliderDiv.appendChild(sliderItem);
             });
             isSliderVisible = true;
