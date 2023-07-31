@@ -7,7 +7,7 @@ API Test &amp; Online Weather API
 
 3-You must enter your key in the JavaScript code. 
 
-----------------#auf Deutsch---------------
+#----------------auf Deutsch---------------
 
 1- API-Test auf VPS und Nginx installiert.
 
